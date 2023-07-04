@@ -1,7 +1,7 @@
 # YOLOv8
 
 针对YOLOv8剪枝以及量化和部署准备工作，作如下记录：
-主要包含 YOLOv8 模型的训练和onnx的导出以及修改 🏁
+主要包含 YOLOv8 模型的训练、onnx的导出/修改以及tensorrt部署对接 🏁
 
 repo：
 
@@ -11,15 +11,14 @@ repo：
 
 ![img](images/yolo_task.png)
 
-
+- 2023.7.8 trt部署对接；
+- 2023.7.7 ort测试对接；
 - 2023.7.6 训练数据voc(xml)->yolo(txt)准备脚本；
 - 2023.7.5 动态batch onnx 导出指导；
 - 2023.7.4 onnx 修改；
 - 2023.7.3 yolov8 install 以及 测试（预测）、训练和onnx导出脚本测试；
 
 ---
-
-
 
 1. clone the ultralytics repository
 
@@ -82,4 +81,4 @@ python onnx_cg_ioname.py  ./workspace/weights/yolov8s-det.transd.onnx
 
 ![](images/io_cg.jpg)
 
-:octocat::octocat::octocat::octocat::octocat::octocat:
+:octocat::octocat:
