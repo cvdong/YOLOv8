@@ -1,5 +1,5 @@
 # @Dong
-# v8 + transpose 更改输出维度顺序 与v5保持一致 方便通用框架trt推理
+# v8 + transpose 更改输出维度顺序 与v5保持一致 方便通用框架trt推理 230704
 
 import onnx
 import onnx.helper as helper

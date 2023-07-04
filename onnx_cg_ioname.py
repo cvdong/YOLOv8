@@ -1,5 +1,5 @@
 # @Dong
-# 更改 v8 节点name
+# 更改 v8 节点name 230704
 
 import onnx
 import sys
