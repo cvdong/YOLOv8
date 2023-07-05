@@ -18,7 +18,11 @@ repo：
 - 2023.7.4 onnx 修改；
 - 2023.7.3 yolov8 install 以及 测试（预测）、训练和onnx导出脚本测试；
 
+主要以YOLOv8 det为主，后续补充seg, 完整流程。
+
 ---
+
+一、环境安装、训练以及ONNX修改
 
 1. clone the ultralytics repository
 
@@ -100,6 +104,11 @@ python onnx_cg_ioname.py  ./workspace/weights/yolov8s-det.transd.onnx
 ```
 
 ![](images/io_cg.jpg)
+
+二、 模型部署对接
+
+待补充
+
 
 :octocat::octocat:
 
