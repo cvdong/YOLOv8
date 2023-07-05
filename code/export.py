@@ -5,4 +5,5 @@ from ultralytics import YOLO
 
 # export
 model = YOLO('workspace/weights/yolov8s-det.pt')
-sucess = model.export(format='onnx', simplify=True)
+# sucess = model.export(format='onnx', simplify=True, dynamic=False)
+sucess = model.export(format='onnx', simplify=True, dynamic=True)

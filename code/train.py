@@ -11,4 +11,4 @@ model = YOLO('yolov8n.yaml').load('yolov8n.pt')  # build from YAML and transfer 
 # train det
 model = YOLO("workspace/weights/yolov8s-det.pt")
 # 
-model.train(data='ultralytics/ultralytics/datasets/VOC.yaml', epochs=20, imgsz=640, batch=64)
+model.train(data='ultralytics/datasets/XX.yaml', epochs=20, imgsz=640, batch=64)
