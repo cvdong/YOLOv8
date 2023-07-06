@@ -54,6 +54,18 @@ python test.py
 python train.py
 ```
 
+在模型训练之前需要准备训练数据，针对目标检测任务，可以使用[labelImg](https://github.com/heartexlabs/labelImg)对训练数据标注，或者使用[anylabeling](https://github.com/vietanhdev/anylabeling)进行半自动化标注，节省标注时间成本。标注可以直接标注YOLO(txt)格式，也可以标注VOC(xml)格式，再转换到YOLO(txt)格式，转换脚本为：
+
+```
+def convert_box(size, box):
+   dw, dh = 1. / size[0], 1. / size[1]
+   x, y, w, h = (box[0] + box[1]) / 2.0 - 1, (box[2] + box[3]) / 2.0 - 1, box[1] - box[0], box[3] - box[2]
+   return x * dw, y * dh, w * dw, h * dh
+```
+笔者以VOC数据集为例对数据进行处理流程如下：
+
+download VOC --> python data.py --> XX.yaml --> python train.py
+
 6. export onnx
 
 ```
@@ -81,7 +93,7 @@ sucess = model.export(format='onnx', simplify=True, dynamic=True)
 python export.py
 ```
 
-tensorrt动态batch推理，trt内部做了并行优化，充分压榨GPU显存，提升模型推理性能，是一个需要掌握的策略。
+tensorrt动态batch推理，trt内部做了并行优化，充分压榨GPU资源，提升模型推理性能，是一个需要掌握的策略。
 
 ![](./images/v8s_mbatch.png)
 
