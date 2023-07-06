@@ -11,12 +11,14 @@ repo：
 
 ![img](images/yolo_task.png)
 
-- 2023.7.8 trt部署对接；
-- 2023.7.7 ort测试对接；
-- 2023.7.6 训练数据voc(xml)->yolo(txt)准备脚本；
-- 2023.7.5 动态batch onnx 导出指导；
-- 2023.7.4 onnx 修改；
-- 2023.7.3 yolov8 install 以及 测试（预测）、训练和onnx导出脚本测试；
+- 2023.7.10  onnx+nms;
+- 2023.7.9   map计算，测试量化/剪枝精度；
+- 2023.7.8   trt部署对接；
+- 2023.7.7   ort测试对接；
+- 2023.7.6   训练数据voc(xml)->yolo(txt)准备脚本；
+- 2023.7.5   动态batch onnx 导出指导；
+- 2023.7.4   onnx 修改；
+- 2023.7.3   yolov8 install 以及 测试（预测）、训练和onnx导出脚本测试；
 
 主要以YOLOv8 det为主，后续补充seg, 完整流程。
 
