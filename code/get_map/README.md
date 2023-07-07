@@ -18,9 +18,7 @@ python get_pre.py
 python get_map.py 
 ```
 
-具体看代码。
-
-![](./map_out/results/lamr.png)
+具体看代码::
 
 ![](./map_out/results/map.png)
 
