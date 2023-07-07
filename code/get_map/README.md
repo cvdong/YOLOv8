@@ -20,7 +20,7 @@ python get_map.py
 
 具体看代码::
 
-![](./map_out/results/map.png)
+![](./map_out/results/mAP.png)
 
 补充：
 
