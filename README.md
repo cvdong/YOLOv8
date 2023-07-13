@@ -11,12 +11,6 @@ repo：
 
 ![img](images/yolo_task.png)
 
-- 2023.7.13  onnx+nms;
-- 2023.7.12  ncnn部署；
-- 2023.7.11  rknn部署；
-- 2023.7.10  opencv部署；
-- 2023.7.9   trt部署；
-- 2023.7.8   ort部署；
 - 2023.7.7   map计算，测试量化/剪枝精度；
 - 2023.7.6   训练数据voc(xml)->yolo(txt)准备脚本；
 - 2023.7.5   动态batch onnx 导出指导；
@@ -124,9 +118,16 @@ python onnx_cg_ioname.py  ./workspace/weights/yolov8s-det.transd.onnx
 
 二、 模型部署对接
 
-待补充
+对于yolov8 tensorrt部署，之前笔者repo已经给出了部署方式:
 
+如下： 
+
+[YOLO_TRT_PY](https://github.com/cvdong/YOLO_TRT_PY)
+[YOLO_TRT_CPP](https://github.com/cvdong/YOLO_TRT_SIM)
 
 :octocat::octocat:
 
 NOTE!
+
+![](./images/Nvidia.jpg)
+
