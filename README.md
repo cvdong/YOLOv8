@@ -127,6 +127,9 @@ python onnx_cg_ioname.py  ./workspace/weights/yolov8s-det.transd.onnx
 
 * [YOLO_TRT_CPP](https://github.com/cvdong/YOLO_TRT_SIM)
 
+* [YOLOv8_deploy](https://github.com/cvdong/YOLOv8_deploy)
+
+
 :octocat::octocat:
 
 NOTE!
